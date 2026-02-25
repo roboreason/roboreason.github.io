@@ -1,0 +1,213 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --accent-from: #7c3aed;
+  --accent-mid:  #3b82f6;
+  --accent-to:   #06b6d4;
+  --text:        #1a1d27;
+  --text-muted:  #5a6075;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Gradient title ── */
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-from) 0%, var(--accent-mid) 50%, var(--accent-to) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Hero ── */
+.hero {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 7rem 2rem 5rem;
+  text-align: center;
+}
+
+.venue-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(124,58,237,0.08), rgba(6,182,212,0.08));
+  border: 1px solid rgba(124,58,237,0.25);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #7c3aed;
+  margin-bottom: 2.25rem;
+}
+
+.paper-title {
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.25rem;
+  font-family: 'Source Serif 4', serif;
+  color: var(--text);
+}
+
+.paper-title .abbr {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.submission-info {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #C00707;
+  margin-bottom: 2rem;
+}
+
+.authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.author {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.affiliation {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ── Intro figure ── */
+.intro-section {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.intro-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.intro-figure img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  display: block;
+}
+
+.intro-figure figcaption {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ── Abstract ── */
+.abstract-section {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.abstract-section h2 {
+  font-size: 2.0rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.abstract-section p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ── Method Overview ── */
+.method-section {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.method-section h2 {
+  font-size: 2.0rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.method-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.method-figure img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+}
+
+.method-figure figcaption.method-caption {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  text-align: left;
+  max-width: 720px;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.method-block {
+  margin-bottom: 0.75rem;
+}
+
+.method-block:last-child {
+  margin-bottom: 0;
+}
+
+.method-figure figcaption strong {
+  color: var(--text);
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #b0b5c8;
+  font-size: 0.8rem;
+  border-top: 1px solid #f0f1f5;
+  margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+  .paper-title { font-size: 1.75rem; }
+}

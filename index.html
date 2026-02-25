@@ -1,1 +1,74 @@
-TBU
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICLR: In-Context Imitation Learning with Visual Reasoning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$']] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+<body>
+
+  <div class="hero">
+    <h1 class="paper-title">
+      <span class="abbr gradient-text">ICLR</span>: In-Context Imitation Learning<br />with Visual Reasoning
+    </h1>
+
+    <p class="submission-info">IROS 2026 Submission Number 268</p>
+  </div>
+
+  <section class="intro-section">
+    <figure class="intro-figure">
+      <img src="assets/intro.png" alt="Method overview" />
+      <figcaption>
+        TL;DR — Our method augments prompt demonstrations with keypoint-based
+        visual reasoning traces in the image space. During inference, the model also
+        performs visual reasoning before predicting the subsequent low-level robot action.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="abstract-section">
+    <h2>Abstract</h2>
+    <p>
+        In-context imitation learning enables robots to adapt to new tasks from a
+        small number of demonstrations without parameter updates, but existing approaches
+        typically condition only on state–action trajectories and lack explicit representations
+        of task intent. This limitation hinders performance in ambiguous task settings
+        where multiple actions may be consistent with the same observations. We present
+        In-Context Imitation Learning with Visual Reasoning (ICLR), a framework that augments
+        demonstration prompts with structured visual reasoning traces representing
+        anticipated future trajectories in image space. Our method jointly learns to
+        generate reasoning traces and low-level actions within a unified autoregressive
+        transformer, grounding action prediction in explicit task intent. We evaluate ICLR
+        in both simulation and real-world manipulation tasks and demonstrate consistent
+        improvements in success rates and generalization to unseen tasks and novel object
+        configurations compared to other in-context imitation learning methods.
+        These results suggest that incorporating embodied visual reasoning represents
+        a promising direction for enhancing the robustness and generalization of
+        robotic in-context learning systems.
+    </p>
+  </section>
+
+  <section class="method-section">
+    <h2>Method Overview</h2>
+    <figure class="method-figure">
+      <img src="assets/method.png" alt="Method overview" />
+      <figcaption class="method-caption">
+        <div class="method-block"><strong>(A) Reasoning trace generation:</strong> To generate the visual reasoning trace at a given time step, we uniformly sample five third-view images from that time step to the end of the trajectory and use Molmo2 to predict the gripper’s pixel location in each image.</div>
+        <div class="method-block"><strong>(B) Encoders:</strong> Multi-view camera images and proprioceptive states are encoded to state tokens $f_s$ by a state encoder. Visual reasoning traces are embedded by a reasoning encoder to produce reasoning tokens $f_r$, and actions are embedded by an action encoder to produce action tokens $f_a$.</div>
+        <div class="method-block"><strong>(C) Transformer:</strong> Modality-specific tokens are interleaved and fed into a causal transformer, which autoregressively predicts the next reasoning trace followed by the corresponding action. During training, teacher forcing is applied over reasoning and action tokens. In inference, the model first generates a reasoning trace and then produces the action in a closed-loop manner.</div>
+      </figcaption>
+    </figure>
+  </section>
+
+</body>
+</html>
