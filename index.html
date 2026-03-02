@@ -69,5 +69,50 @@
     </figure>
   </section>
 
+  <section class="results-section">
+    <h2>Results</h2>
+
+    <div class="subsection">
+      <h3 class="subsection-title">Simulation Results</h3>
+
+      <div class="chart-selector-row">
+        <label for="benchmark-select">Benchmark</label>
+        <select id="benchmark-select">
+          <option value="chart-libero-object">LIBERO-Object</option>
+          <option value="chart-libero-kitchen">LIBERO-90 Kitchen</option>
+          <option value="chart-libero-living">LIBERO-90 Living Room</option>
+          <option value="chart-libero-study">LIBERO-90 Study</option>
+        </select>
+      </div>
+
+      <div class="chart-block">
+        <canvas id="sim-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection-title">Real-World Results</h3>
+
+      <div class="chart-selector-row">
+        <label for="realworld-select">Benchmark</label>
+        <select id="realworld-select">
+          <option value="pick-and-place">Pick-and-Place</option>
+          <option value="poking">Poking</option>
+        </select>
+      </div>
+
+      <div class="chart-block">
+        <canvas id="realworld-chart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="js/charts.js"></script>
+
+  <section class="results-section">
+    <h2>Qualitative Results</h2>
+  </section>
+
 </body>
 </html>
