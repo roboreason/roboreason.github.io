@@ -27,11 +27,11 @@
 
   <section class="intro-section">
     <figure class="intro-figure">
-      <img src="assets/intro.png" alt="Method overview" />
+      <video autoplay loop muted playsinline controls>
+        <source src="assets/IROS_2026.mp4" type="video/mp4" />
+      </video>
       <figcaption>
-        TL;DR — Our method augments prompt demonstrations with keypoint-based
-        visual reasoning traces in the image space. During inference, the model also
-        performs visual reasoning before predicting the subsequent low-level robot action.
+        TL;DR — We introduce an in-context imitation learning method that learns not only to act but also to reason.
       </figcaption>
     </figure>
   </section>
@@ -39,22 +39,21 @@
   <section class="abstract-section">
     <h2>Abstract</h2>
     <p>
-        In-context imitation learning enables robots to adapt to new tasks from a
-        small number of demonstrations without parameter updates, but existing approaches
-        typically condition only on state–action trajectories and lack explicit representations
-        of task intent. This limitation hinders performance in ambiguous task settings
-        where multiple actions may be consistent with the same observations. We present
-        In-Context Imitation Learning with Visual Reasoning (ICLR), a framework that augments
-        demonstration prompts with structured visual reasoning traces representing
-        anticipated future trajectories in image space. Our method jointly learns to
-        generate reasoning traces and low-level actions within a unified autoregressive
-        transformer, grounding action prediction in explicit task intent. We evaluate ICLR
-        in both simulation and real-world manipulation tasks and demonstrate consistent
-        improvements in success rates and generalization to unseen tasks and novel object
-        configurations compared to other in-context imitation learning methods.
-        These results suggest that incorporating embodied visual reasoning represents
-        a promising direction for enhancing the robustness and generalization of
-        robotic in-context learning systems.
+      In-context imitation learning enables robots to adapt to new tasks from a small number of
+      demonstrations without additional parameter updates, but existing approaches typically
+      condition only on state–action trajectories and lack explicit representations of task intent.
+      This limitation hinders performance in complex and ambiguous task settings where
+      the same actions may be consistent with different task intents.
+      We present In-Context Imitation Learning with Visual Reasoning (ICLR), a framework that augments
+      demonstration prompts with structured visual reasoning traces representing anticipated
+      future robot trajectories in image space. Our method jointly learns to generate reasoning traces
+      and low-level actions within a unified autoregressive transformer, enabling the model to mimic
+      not only action prediction but also the reasoning process that leads to those actions.
+      We extensively evaluate ICLR in both simulation and real-world manipulation tasks and
+      demonstrate consistent improvements in success rates and generalization to unseen tasks and
+      novel object configurations compared to other in-context imitation learning methods.
+      These results suggest that incorporating embodied visual reasoning represents a promising direction
+      for enhancing the robustness and generalization of robotic in-context learning systems.
     </p>
   </section>
 

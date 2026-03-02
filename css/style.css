@@ -37,7 +37,7 @@ body {
 .hero {
   max-width: 860px;
   margin: 0 auto;
-  padding: 7rem 2rem 5rem;
+  padding: 7rem 2rem 2rem;
   text-align: center;
 }
 
@@ -72,10 +72,16 @@ body {
 }
 
 .submission-info {
-  font-size: 1.5rem;
+  display: inline-block;
+  font-size: 0.75rem;
   font-weight: 700;
-  color: #C00707;
-  margin-bottom: 2rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #ea6d0e;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
 }
 
 .authors {
@@ -112,9 +118,10 @@ body {
   gap: 1rem;
 }
 
-.intro-figure img {
+.intro-figure img,
+.intro-figure video {
   width: 100%;
-  max-width: 560px;
+  max-width: 860px;
   height: auto;
   display: block;
 }
