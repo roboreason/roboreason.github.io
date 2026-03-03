@@ -19,9 +19,9 @@ html {
 body {
   background: #ffffff;
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Google Sans', sans-serif;
   line-height: 1.7;
-  font-size: 16px;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -35,7 +35,7 @@ body {
 
 /* ── Hero ── */
 .hero {
-  max-width: 860px;
+  max-width: min(92vw, 1300px);
   margin: 0 auto;
   padding: 7rem 2rem 2rem;
   text-align: center;
@@ -56,29 +56,29 @@ body {
 }
 
 .paper-title {
-  font-size: 2.8rem;
+  font-size: 2.4vw;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin-bottom: 2.25rem;
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Google Sans', sans-serif;
+  white-space: nowrap;
+  text-align: center;
   color: var(--text);
 }
 
 .paper-title .abbr {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Google Sans', sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
 .submission-info {
-  display: inline-block;
-  font-size: 0.75rem;
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #fff;
-  background: #ea6d0e;
+  /* text-transform: uppercase; */
+  color: #ea6d0e;
   padding: 0.4rem 1rem;
   border-radius: 6px;
   margin-bottom: 1.25rem;
@@ -127,7 +127,7 @@ body {
 }
 
 .intro-figure figcaption {
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   color: var(--text-muted);
   line-height: 1.6;
   text-align: center;
@@ -149,21 +149,22 @@ body {
 }
 
 .abstract-section p {
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 /* ── Method Overview ── */
 .method-section {
-  max-width: 860px;
+  max-width: min(92vw, 1300px);
   margin: 0 auto;
   padding: 0 2rem 4rem;
 }
 
 .method-section h2 {
   font-size: 2.0rem;
-  font-weight: 600;
+  font-weight: 900;
   margin-bottom: 1.25rem;
   color: var(--text);
   text-align: center;
@@ -177,18 +178,17 @@ body {
 }
 
 .method-figure img {
-  width: 100%;
-  max-width: 720px;
+  width: 85%;
   height: auto;
   display: block;
 }
 
 .method-figure figcaption.method-caption {
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   color: var(--text-muted);
-  line-height: 1.7;
-  text-align: left;
-  max-width: 720px;
+  line-height: 1.5;
+  text-align: justify;
+  width: 85%;
   width: 100%;
   align-self: flex-start;
 }
@@ -244,7 +244,7 @@ body {
 }
 
 .chart-selector-row select {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Google Sans', sans-serif;
   font-size: 0.875rem;
   color: var(--text);
   background: #fff;
