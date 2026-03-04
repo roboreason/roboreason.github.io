@@ -27,11 +27,11 @@ const data = {
   // Tasks: Cream Cheese in Basket | Tomato Sauce in Tray | Black Bowl in Tray
   //        Red Mug on Right Plate | Chocolate Pudding Right of Plate
   'libero-living': {
-    'ICRT':         [27.33, 45.33, 0.0, 0.0, 0.67, 14.67],
-    'TO-Dropout':   [0.0, 33.33, 60.0, 0.0, 0.0, 18.67],
-    'TO':           [0.0, 30.0, 36.0, 0.0, 0.0, 13.20],
-    'Ours Dropout': [4.0, 52.67, 58.67, 0.0, 75.33, 38.13],
-    'Ours':         [0.0, 40.67, 6.0, 2.0, 8.67, 11.47],
+    'ICRT':         [27.33, 45.33, 21.33, 0.0, 0.67, 14.67],
+    'TO-Dropout':   [0.0, 33.33, 50.0, 0.0, 0.0, 18.67],
+    'TO':           [0.0, 30.0, 34.0, 0.0, 0.0, 13.20],
+    'Ours Dropout': [4.0, 52.67, 62.67, 0.0, 75.33, 38.13],
+    'Ours':         [0.0, 40.67, 4.67, 2.0, 8.67, 11.47],
   },
 
   // Tasks: Book in Front Compartment | Book in Back Compartment
