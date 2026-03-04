@@ -150,8 +150,9 @@ const baseOptions = {
     legend: {
       position: 'top',
       labels: {
-        font: { family: 'Inter, sans-serif', size: 12 },
-        padding: 16,
+        font: { family: 'Google Sans, Noto Sans, sans-serif', size: 12, weight: '600' },
+        color: '#4a4a4a',
+        padding: 14,
         boxWidth: 12,
         boxHeight: 12,
       },
@@ -165,7 +166,11 @@ const baseOptions = {
   scales: {
     x: {
       grid: { display: false },
-      ticks: { font: { family: 'Inter, sans-serif', size: 11 }, maxRotation: 20 },
+      ticks: {
+        color: '#4a4a4a',
+        font: { family: 'Noto Sans, sans-serif', size: 11 },
+        maxRotation: 20,
+      },
     },
     y: {
       min: 0,
@@ -173,14 +178,15 @@ const baseOptions = {
       title: {
         display: true,
         text: 'Success Rate (%)',
-        font: { family: 'Inter, sans-serif', size: 11 },
-        color: '#5a6075',
+        font: { family: 'Google Sans, Noto Sans, sans-serif', size: 11, weight: '600' },
+        color: '#4a4a4a',
       },
       ticks: {
-        font: { family: 'Inter, sans-serif', size: 11 },
+        color: '#4a4a4a',
+        font: { family: 'Noto Sans, sans-serif', size: 11 },
         callback: v => v + '%',
       },
-      grid: { color: 'rgba(0,0,0,0.06)' },
+      grid: { color: 'rgba(0,0,0,0.08)' },
     },
   },
 };
