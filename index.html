@@ -8,7 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/css/bulma-carousel.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.min.js"></script>
   <script>
     MathJax = {
       tex: { inlineMath: [['$', '$']] }
@@ -133,9 +135,294 @@
 
   <section class="section results-section">
     <div class="container is-max-desktop">
-      <h2>Qualitative Results</h2>
+      <h2>Qualitative Comparisons</h2>
+      <p class="qual-note">All rollouts are shown at 1X speed.</p>
+      <div class="qual-grid">
+        <article class="qual-card">
+          <h4 class="qual-task">Tomato to Grey Bowl</h4>
+          <div class="qual-videos">
+            <div class="qual-video">
+              <span class="qual-label">ICRT</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_tomato_grey_bowl.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="qual-video">
+              <span class="qual-label">Ours</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_visual_trace_mma_tomato_grey_bowl.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+
+        <article class="qual-card">
+          <h4 class="qual-task">Dumpling to Red Box</h4>
+          <div class="qual-videos">
+            <div class="qual-video">
+              <span class="qual-label">ICRT</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_dumpling_red_box.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="qual-video">
+              <span class="qual-label">Ours</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_visual_trace_mma_dumpling_red_box.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+
+        <article class="qual-card">
+          <h4 class="qual-task">Zebra to Blue Bowl</h4>
+          <div class="qual-videos">
+            <div class="qual-video">
+              <span class="qual-label">ICRT</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_zebra_blue_bowl.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="qual-video">
+              <span class="qual-label">Ours</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_visual_trace_mma_zebra_blue_bowl.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+
+        <article class="qual-card">
+          <h4 class="qual-task">Lion to Blue Bowl</h4>
+          <div class="qual-videos">
+            <div class="qual-video">
+              <span class="qual-label">ICRT</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_lion_blue_bowl.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="qual-video">
+              <span class="qual-label">Ours</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_visual_trace_mma_lion_blue_bowl.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+
+        <article class="qual-card">
+          <h4 class="qual-task">Potato to Grey Bowl</h4>
+          <div class="qual-videos">
+            <div class="qual-video">
+              <span class="qual-label">ICRT</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_potato_grey_bowl.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="qual-video">
+              <span class="qual-label">Ours</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_visual_trace_mma_potato_grey_bowl.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+
+        <article class="qual-card">
+          <h4 class="qual-task">Hedgehog to Red Box</h4>
+          <div class="qual-videos">
+            <div class="qual-video">
+              <span class="qual-label">ICRT</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_hedgehog_red_box.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="qual-video">
+              <span class="qual-label">Ours</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_visual_trace_mma_hedgehog_red_box.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+
+        <article class="qual-card">
+          <h4 class="qual-task">Poke Monkey</h4>
+          <div class="qual-videos">
+            <div class="qual-video">
+              <span class="qual-label">ICRT</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_poke_monkey.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="qual-video">
+              <span class="qual-label">Ours</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_visual_trace_mma_poke_monkey.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+
+        <article class="qual-card">
+          <h4 class="qual-task">Poke Hippo</h4>
+          <div class="qual-videos">
+            <div class="qual-video">
+              <span class="qual-label">ICRT</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_poke_hippo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="qual-video">
+              <span class="qual-label">Ours</span>
+              <video controls muted loop playsinline preload="metadata">
+                <source src="assets/recordings_website/okay_h264/icrt_visual_trace_mma_poke_hippo.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
+  <section class="section results-section">
+    <div class="container is-max-desktop">
+      <h2>More Results</h2>
+      <div id="more-results-carousel" class="carousel results-carousel more-carousel">
+        <div class="item more-slide">
+          <h4 class="more-slide-title">Real: Monkey to Red Box</h4>
+          <video data-auto-loop data-real-video playsinline preload="metadata">
+            <source src="assets/recordings_website/more_h264/icrt_visual_trace_mma_monkey_red_box.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="item more-slide">
+          <h4 class="more-slide-title">Sim: Black Bowl Bottom Drawer</h4>
+          <video data-auto-loop playsinline preload="metadata">
+            <source src="assets/recordings_website/more_h264/black_bowl_bottom_drawer.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="item more-slide">
+          <h4 class="more-slide-title">Real: Tiger to Blue Bowl</h4>
+          <video data-auto-loop data-real-video playsinline preload="metadata">
+            <source src="assets/recordings_website/more_h264/icrt_visual_trace_mma_tiger_blue_bowl.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="item more-slide">
+          <h4 class="more-slide-title">Sim: Salad in Basket</h4>
+          <video data-auto-loop playsinline preload="metadata">
+            <source src="assets/recordings_website/more_h264/salad_in_basket.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="item more-slide">
+          <h4 class="more-slide-title">Real: Poke Potato</h4>
+          <video data-auto-loop playsinline preload="metadata">
+            <source src="assets/recordings_website/more_h264/icrt_visual_trace_mma_poke_potato.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="item more-slide">
+          <h4 class="more-slide-title">Sim: Chocolate Pudding Right of Plate</h4>
+          <video data-auto-loop playsinline preload="metadata">
+            <source src="assets/recordings_website/more_h264/chocolate_pudding_right_of_plate.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="item more-slide">
+          <h4 class="more-slide-title">Real: Poke Jaguar</h4>
+          <video data-auto-loop playsinline preload="metadata">
+            <source src="assets/recordings_website/more_h264/icrt_visual_trace_mma_poke_jaguar.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="item more-slide">
+          <h4 class="more-slide-title">Sim: Book in Left Compartment</h4>
+          <video data-auto-loop playsinline preload="metadata">
+            <source src="assets/recordings_website/more_h264/book_in_left_compartment.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+<script>
+  document.querySelectorAll('.qual-video video').forEach((video) => {
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(() => {});
+    }
+  });
+
+  const getTargetRate = (video) => {
+    const src = video.querySelector('source')?.getAttribute('src') || '';
+    // Only real videos use the icrt_visual_trace_mma_ prefix.
+    return src.includes('icrt_visual_trace_mma_') ? 3.0 : 1.0;
+  };
+
+  const enforceRate = (video) => {
+    const targetRate = getTargetRate(video);
+    if (video.playbackRate !== targetRate) video.playbackRate = targetRate;
+    if (video.defaultPlaybackRate !== targetRate) video.defaultPlaybackRate = targetRate;
+  };
+
+  const initMoreVideos = () => {
+    document.querySelectorAll('#more-results-carousel video[data-auto-loop]').forEach((video) => {
+      video.autoplay = true;
+      video.loop = true;
+      video.muted = true;
+      video.playsInline = true;
+      video.controls = false;
+      video.setAttribute('disablePictureInPicture', '');
+      video.setAttribute('controlsList', 'nodownload nofullscreen noremoteplayback');
+      video.addEventListener('contextmenu', (e) => e.preventDefault());
+      video.addEventListener('loadedmetadata', () => enforceRate(video));
+      video.addEventListener('play', () => enforceRate(video));
+      video.addEventListener('ratechange', () => enforceRate(video));
+      enforceRate(video);
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === 'function') {
+        playPromise.catch(() => {});
+      }
+    });
+  };
+
+  initMoreVideos();
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!window.bulmaCarousel) return;
+    bulmaCarousel.attach('#more-results-carousel', {
+      slidesToScroll: 1,
+      slidesToShow: 3,
+      loop: true,
+      infinite: true,
+      autoplay: false,
+      navigation: true,
+      pagination: true,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    });
+    // Re-init after carousel clones slides.
+    setTimeout(initMoreVideos, 50);
+    setTimeout(initMoreVideos, 400);
+  });
+</script>
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template modified from
+            <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+          </p>
+          <p>
+            This website is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+              Creative Commons Attribution-ShareAlike 4.0 International License
+            </a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

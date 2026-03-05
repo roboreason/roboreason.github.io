@@ -77,7 +77,7 @@ const realWorldData = {
 const realWorldBenchmarks = [
   {
     id: 'pick-and-place',
-    labels: ['Dumpling→Red Box', 'Zebra→Blue Bowl', 'Tomato→Grey Bowl', 'Monkey→Red Box', 'Lion→Blue Bowl', 'Potato→Grey Bowl', 'Average'],
+    labels: ['Dumpling in Red Box', 'Zebra in Blue Bowl', 'Tomato in Grey Bowl', 'Monkey in Red Box', 'Lion in Blue Bowl', 'Potato in Grey Bowl', 'Average'],
   },
   {
     id: 'poking',
@@ -103,7 +103,7 @@ const benchmarks = [
   {
     id: 'chart-libero-object',
     key: 'libero-object',
-    labels: ['Tomato Sauce to Basket', 'Salad Dressing to Basket', 'Alphabet Soup to Basket', 'Average'],
+    labels: ['Tomato Sauce in Basket', 'Salad Dressing in Basket', 'Alphabet Soup in Basket', 'Average'],
   },
   {
     id: 'chart-libero-kitchen',
